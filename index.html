@@ -7,28 +7,24 @@
   <meta name="description" content="Portfolio of Swet Patel, a Full-Stack & AI Systems Engineer specializing in Autonomous AI Agents, RAG Pipelines, Multi-Tenant Architectures, and Modern Web Systems.">
   <meta name="keywords" content="Swet Patel, Full-Stack Developer, AI Engineer, RAG, Autonomous Agents, TypeScript, Python, FastAPI, React, Node.js">
   <meta name="author" content="Swet Patel">
-  
-  <!-- Open Graph / Meta -->
+
   <meta property="og:title" content="Swet Patel | Full-Stack & AI Systems Engineer">
-  <meta property="og:description" content="Explore production projects in AI Agents, RAG Pipelines, Multi-Tenant Workflows, and Full-Stack Engineering.">
+  <meta property="og:description" content="Production projects in AI Agents, RAG Pipelines, Multi-Tenant Workflows, and Full-Stack Engineering.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://portfolio-website-rosy-two-89.vercel.app/">
-  
-  <!-- Fonts -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-  
-  <!-- Styling -->
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Navigation Header -->
   <nav class="navbar" id="navbar" aria-label="Main Navigation">
     <div class="container nav-container">
       <a href="#home" class="nav-logo" aria-label="Swet Patel Home">SWET<span>.</span></a>
-      
+
       <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
         <span class="menu-bar"></span>
         <span class="menu-bar"></span>
@@ -47,9 +43,8 @@
   </nav>
 
   <main>
-    
-    <!-- Hero / About Section -->
-    <section id="home" class="hero-section">
+
+    <section id="home" class="hero">
       <div class="container hero-grid">
         <div class="hero-content">
           <div class="hero-badges-wrapper">
@@ -58,17 +53,19 @@
               <span>Available for Opportunities</span>
             </div>
             <div class="hero-badge badge-subtle">
-              <span>Indus University &bull; B.Tech CSE '27</span>
+              <span>B.Tech CSE '27 &bull; Indus University</span>
             </div>
           </div>
-          
+
           <h1 class="hero-title">
-            Hi, I'm Swet Patel.<br>
+            Swet Patel.<br>
             <span class="gradient-text">Full-Stack &amp; AI Systems Engineer</span>
           </h1>
+
           <p class="hero-desc">
-            Computer Science undergraduate specializing in full-stack TypeScript/Python engineering, retrieval-augmented generation (RAG) pipelines, and autonomous AI agents. Experienced in building production-grade multi-tenant web applications, containerized environments, and high-performance developer tools.
+            I build production-grade web applications, grounded RAG pipelines, and autonomous AI agents.
           </p>
+
           <div class="hero-actions">
             <a href="#projects" class="btn btn-primary" aria-label="View Swet's Projects">
               <span>Explore Projects</span>
@@ -79,16 +76,35 @@
               <span>View Resume</span>
             </button>
           </div>
+
+          <div class="hero-stats" aria-label="Quick facts">
+            <div class="hero-stat">
+              <span class="hero-stat-value">7+</span>
+              <span class="hero-stat-label">Projects Shipped</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat-value">5</span>
+              <span class="hero-stat-label">AI &amp; RAG Systems</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat-value">2</span>
+              <span class="hero-stat-label">Hackathon Placements</span>
+            </div>
+            <div class="hero-stat">
+              <span class="hero-stat-value">2y+</span>
+              <span class="hero-stat-label">Full-Stack Experience</span>
+            </div>
+          </div>
         </div>
-        
+
         <div class="hero-art-container">
           <div class="hero-art-glow"></div>
           <div class="hero-art-card" aria-hidden="true">
-            <div class="art-header">
-              <span class="art-dot dot-red"></span>
-              <span class="art-dot dot-yellow"></span>
-              <span class="art-dot dot-green"></span>
-              <span class="art-tab-title">engineer.ts</span>
+            <div class="mock-bar">
+              <span class="mock-dot dot-red"></span>
+              <span class="mock-dot dot-yellow"></span>
+              <span class="mock-dot dot-green"></span>
+              <span class="mock-bar-title">engineer.ts</span>
             </div>
             <pre class="art-code"><code><span class="keyword">const</span> engineer = {
   name: <span class="string">'Swet Patel'</span>,
@@ -110,120 +126,110 @@
       </div>
     </section>
 
-    <!-- Technical Skills Matrix -->
     <section id="skills" class="section">
       <div class="container">
         <div class="section-header">
-          <p class="section-subtitle">Technical Matrix</p>
-          <h2 class="section-title">Skills &amp; Capabilities</h2>
-          <p class="section-lead">A comprehensive toolkit spanning modern frontend architectures, high-performance backends, autonomous AI agent frameworks, and distributed database ecosystems.</p>
+          <p class="section-subtitle">Capabilities</p>
+          <h2 class="section-title">Skills &amp; Tooling</h2>
+          <p class="section-lead">A focused toolkit across frontend architecture, high-performance backends, agentic AI, and distributed databases.</p>
         </div>
-        
+
+        <div class="stack-row" aria-label="Core stack">
+          <span class="stack-item"><i class="stack-dot" style="--dot:#60a5fa"></i>TypeScript</span>
+          <span class="stack-item"><i class="stack-dot" style="--dot:#facc15"></i>Python</span>
+          <span class="stack-item"><i class="stack-dot" style="--dot:#22d3ee"></i>React 19</span>
+          <span class="stack-item"><i class="stack-dot" style="--dot:#2dd4bf"></i>FastAPI</span>
+          <span class="stack-item"><i class="stack-dot" style="--dot:#a78bfa"></i>PostgreSQL</span>
+          <span class="stack-item"><i class="stack-dot" style="--dot:#f472b6"></i>Qdrant</span>
+        </div>
+
         <div class="skills-grid">
-          <!-- Programming Languages -->
           <article class="skill-card">
             <div class="skill-card-header">
               <div class="skill-icon" aria-hidden="true">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
               </div>
               <h3 class="skill-title">Languages</h3>
             </div>
-            <p class="skill-desc">Strong typed functional and object-oriented programming for scalable systems.</p>
+            <p class="skill-desc">Strongly typed, multi-paradigm engineering for scalable systems.</p>
             <div class="skill-tags">
-              <span class="skill-tag">TypeScript</span>
-              <span class="skill-tag">JavaScript</span>
-              <span class="skill-tag">Python</span>
-              <span class="skill-tag">SQL</span>
-              <span class="skill-tag">HTML5 / CSS3</span>
-              <span class="skill-tag">PHP</span>
-              <span class="skill-tag">C++</span>
-              <span class="skill-tag">Dart</span>
+              <span class="chip">TypeScript</span>
+              <span class="chip">Python</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">SQL</span>
+              <span class="chip">C++</span>
             </div>
           </article>
 
-          <!-- Web & Mobile Frameworks -->
           <article class="skill-card">
             <div class="skill-card-header">
               <div class="skill-icon" aria-hidden="true">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
               </div>
               <h3 class="skill-title">Web &amp; Mobile</h3>
             </div>
-            <p class="skill-desc">Modern single-page applications, design systems, and cross-platform native clients.</p>
+            <p class="skill-desc">Modern SPAs, design systems, and cross-platform clients.</p>
             <div class="skill-tags">
-              <span class="skill-tag">React.js 19</span>
-              <span class="skill-tag">Vite</span>
-              <span class="skill-tag">React Router v7</span>
-              <span class="skill-tag">Zustand</span>
-              <span class="skill-tag">Flutter</span>
-              <span class="skill-tag">Tailwind CSS</span>
-              <span class="skill-tag">Design Systems</span>
+              <span class="chip">React 19</span>
+              <span class="chip">Vite</span>
+              <span class="chip">Tailwind CSS</span>
+              <span class="chip">Zustand</span>
+              <span class="chip">Flutter</span>
             </div>
           </article>
 
-          <!-- AI & Backend Systems -->
           <article class="skill-card">
             <div class="skill-card-header">
               <div class="skill-icon" aria-hidden="true">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"/><path d="M12 18v4"/><path d="M4.93 4.93l2.83 2.83"/><path d="M16.24 16.24l2.83 2.83"/><path d="M2 12h4"/><path d="M18 12h4"/><path d="M4.93 19.07l2.83-2.83"/><path d="M16.24 7.76l2.83-2.83"/></svg>
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"/><path d="M12 18v4"/><path d="M4.93 4.93l2.83 2.83"/><path d="M16.24 16.24l2.83 2.83"/><path d="M2 12h4"/><path d="M18 12h4"/><path d="M4.93 19.07l2.83-2.83"/><path d="M16.24 7.76l2.83-2.83"/></svg>
               </div>
-              <h3 class="skill-title">AI &amp; Backend Systems</h3>
+              <h3 class="skill-title">AI &amp; Backend</h3>
             </div>
-            <p class="skill-desc">Autonomous LLM agent orchestration, RAG architectures, and asynchronous APIs.</p>
+            <p class="skill-desc">Agent orchestration, RAG pipelines, and async APIs.</p>
             <div class="skill-tags">
-              <span class="skill-tag">FastAPI</span>
-              <span class="skill-tag">Node.js</span>
-              <span class="skill-tag">Express.js</span>
-              <span class="skill-tag">Django</span>
-              <span class="skill-tag">Vercel AI SDK</span>
-              <span class="skill-tag">Google Gemini / GenAI</span>
-              <span class="skill-tag">Sentence Transformers</span>
-              <span class="skill-tag">Pydantic v2</span>
+              <span class="chip">FastAPI</span>
+              <span class="chip">Node.js</span>
+              <span class="chip">Express</span>
+              <span class="chip">Django</span>
+              <span class="chip">Vercel AI SDK</span>
             </div>
           </article>
 
-          <!-- Databases, Cloud & DevOps -->
           <article class="skill-card">
             <div class="skill-card-header">
               <div class="skill-icon" aria-hidden="true">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/></svg>
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/></svg>
               </div>
               <h3 class="skill-title">Databases &amp; DevOps</h3>
             </div>
-            <p class="skill-desc">Relational DBMS, vector databases, containerized workflows, and cloud deployments.</p>
+            <p class="skill-desc">Relational, vector, containerized, and serverless.</p>
             <div class="skill-tags">
-              <span class="skill-tag">PostgreSQL</span>
-              <span class="skill-tag">Qdrant Cloud</span>
-              <span class="skill-tag">ChromaDB</span>
-              <span class="skill-tag">Supabase</span>
-              <span class="skill-tag">Prisma ORM</span>
-              <span class="skill-tag">Docker Compose</span>
-              <span class="skill-tag">Bun</span>
-              <span class="skill-tag">Git / GitHub</span>
-              <span class="skill-tag">Vercel</span>
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">Qdrant</span>
+              <span class="chip">Supabase</span>
+              <span class="chip">Prisma</span>
+              <span class="chip">Docker</span>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Interactive Projects Section -->
     <section id="projects" class="section">
       <div class="container">
         <div class="section-header">
           <p class="section-subtitle">Portfolio</p>
           <h2 class="section-title">Featured Projects</h2>
-          <p class="section-lead">A collection of autonomous AI agents, enterprise multi-tenant systems, RAG pipelines, and cross-platform applications.</p>
+          <p class="section-lead">Autonomous agents, multi-tenant systems, RAG pipelines, and cross-platform applications.</p>
         </div>
 
-        <!-- Project Filters -->
         <div class="project-filter-container">
           <div class="filter-tabs" role="tablist" aria-label="Project Category Filters">
             <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">
               All Projects <span class="filter-count">7</span>
             </button>
             <button class="filter-btn" data-filter="ai-rag" role="tab" aria-selected="false">
-              AI &amp; RAG Systems <span class="filter-count">4</span>
+              AI &amp; RAG Systems <span class="filter-count">5</span>
             </button>
             <button class="filter-btn" data-filter="fullstack" role="tab" aria-selected="false">
               Full-Stack &amp; Cloud <span class="filter-count">2</span>
@@ -233,32 +239,61 @@
             </button>
           </div>
         </div>
-        
+
         <div class="projects-grid" id="projects-grid">
-          
-          <!-- Project 1: ExamAI (AI & RAG / Full-Stack) -->
+
           <article class="project-card" data-category="ai-rag fullstack">
+            <div class="project-preview mock-dashboard">
+              <div class="mock-bar">
+                <span class="mock-dot dot-red"></span>
+                <span class="mock-dot dot-yellow"></span>
+                <span class="mock-dot dot-green"></span>
+                <span class="mock-bar-title">examai &middot; dashboard</span>
+              </div>
+              <div class="mock-dash-body">
+                <div class="mock-stats">
+                  <div class="mock-stat">
+                    <span class="mock-stat-label">Accuracy</span>
+                    <span class="mock-stat-value">92%</span>
+                  </div>
+                  <div class="mock-stat">
+                    <span class="mock-stat-label">Quizzes</span>
+                    <span class="mock-stat-value">48</span>
+                  </div>
+                  <div class="mock-stat">
+                    <span class="mock-stat-label">Streak</span>
+                    <span class="mock-stat-value">12d</span>
+                  </div>
+                </div>
+                <svg class="mock-chart" viewBox="0 0 240 60" preserveAspectRatio="none" aria-hidden="true">
+                  <defs>
+                    <linearGradient id="chartFill" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.35"/>
+                      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+                    </linearGradient>
+                  </defs>
+                  <polygon points="0,50 26,42 52,46 78,29 104,35 130,18 156,25 182,11 208,15 240,5 240,60 0,60" fill="url(#chartFill)"/>
+                  <polyline points="0,50 26,42 52,46 78,29 104,35 130,18 156,25 182,11 208,15 240,5" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <div class="mock-progress">
+                  <div class="mock-progress-bar"><span class="mock-progress-fill" style="width: 72%"></span></div>
+                  <span class="mock-progress-label">RAG coverage &middot; 72%</span>
+                </div>
+              </div>
+            </div>
             <div class="project-body">
               <div class="project-meta">
                 <span class="project-focus-tag tag-ai">Capstone Platform</span>
                 <span class="project-category-badge">AI &amp; RAG</span>
               </div>
-              <h3 class="project-title">ExamAI — AI-Powered Exam Prep Platform</h3>
-              <p class="project-desc">
-                Full-stack, AI-powered study platform where students query teacher-approved course materials via RAG, take AI-generated and teacher-authored quizzes, and study flashcards with detailed performance analytics dashboards.
-              </p>
-              <ul class="project-features">
-                <li><strong>Grounded RAG Pipeline:</strong> Integrated <strong>Google Gemini</strong> structured output with metadata-filtered <strong>Qdrant Cloud</strong> vector retrieval and local <strong>sentence-transformers</strong> dense embeddings.</li>
-                <li><strong>Decoupled Architecture:</strong> <strong>FastAPI</strong> backend (Python 3.14) with <strong>SQLAlchemy 2</strong> + <strong>Supabase PostgreSQL</strong> and <strong>React 19</strong> (Vite 8, Tailwind CSS v4, Zustand).</li>
-                <li><strong>Deterministic Generation:</strong> Closed-loop validation retry harness guaranteeing 100% schema-valid MCQ and flashcard synthesis.</li>
-              </ul>
+              <h3 class="project-title">ExamAI</h3>
+              <p class="project-desc">Full-stack exam prep platform with grounded RAG over course materials, AI-generated quizzes, and performance analytics.</p>
               <div class="project-tags">
-                <span class="project-tag">Python / FastAPI</span>
-                <span class="project-tag">React 19</span>
-                <span class="project-tag">Qdrant Cloud</span>
-                <span class="project-tag">Google Gemini</span>
-                <span class="project-tag">Supabase</span>
-                <span class="project-tag">SQLAlchemy 2</span>
+                <span class="chip">FastAPI</span>
+                <span class="chip">React 19</span>
+                <span class="chip">Qdrant</span>
+                <span class="chip">Gemini</span>
+                <span class="chip">Supabase</span>
               </div>
             </div>
             <div class="project-footer">
@@ -269,29 +304,38 @@
             </div>
           </article>
 
-          <!-- Project 2: DevClaw CLI (AI & RAG / Dev Tools) -->
           <article class="project-card" data-category="ai-rag tools-mobile">
+            <div class="project-preview mock-terminal">
+              <div class="mock-bar">
+                <span class="mock-dot dot-red"></span>
+                <span class="mock-dot dot-yellow"></span>
+                <span class="mock-dot dot-green"></span>
+                <span class="mock-bar-title">devclaw &mdash; zsh</span>
+              </div>
+              <div class="mock-term-body">
+                <div class="mock-term-line"><span class="mock-prompt">&gt;</span> devclaw plan init</div>
+                <div class="mock-term-line ok"><span class="mock-check-marker">&#10003;</span> Indexed 1,284 symbols</div>
+                <div class="mock-term-line dim">&nbsp;&nbsp;&#9656; Generating mutation plan&hellip;</div>
+                <div class="mock-diff">
+                  <div class="mock-diff-line add">+ const agent = new DevClaw()</div>
+                  <div class="mock-diff-line del">- legacy implementation</div>
+                </div>
+                <div class="mock-term-line"><span class="mock-prompt">&gt;</span> <span class="cursor-block"></span></div>
+              </div>
+            </div>
             <div class="project-body">
               <div class="project-meta">
                 <span class="project-focus-tag tag-agent">Autonomous Agent</span>
                 <span class="project-category-badge">Dev Tools</span>
               </div>
-              <h3 class="project-title">DevClaw CLI — Autonomous AI Coding Agent</h3>
-              <p class="project-desc">
-                An interactive dual-interface (Terminal TUI and Telegram Bot) autonomous AI software engineering agent built on Bun, TypeScript, and the Vercel AI SDK Core with safe sandboxed execution loops.
-              </p>
-              <ul class="project-features">
-                <li><strong>Vercel AI SDK Core:</strong> Orchestrates streaming multi-model LLM generation (via <strong>OpenRouter API</strong>) with Zod tool-calling schemas for planning, indexing, and executing codebase mutations.</li>
-                <li><strong>Safe Staging Architecture:</strong> Strict workspace isolation and path-traversal sandboxing with human-in-the-loop diff confirmations before applying changes.</li>
-                <li><strong>Dual Control Surface:</strong> Rich terminal experience using <strong>@clack/prompts</strong> and remote mobile command &amp; control via <strong>Telegraf Telegram Bot</strong>.</li>
-              </ul>
+              <h3 class="project-title">DevClaw CLI</h3>
+              <p class="project-desc">Autonomous AI coding agent with a terminal TUI and Telegram control surface, powered by the Vercel AI SDK.</p>
               <div class="project-tags">
-                <span class="project-tag">Bun Runtime</span>
-                <span class="project-tag">TypeScript</span>
-                <span class="project-tag">Vercel AI SDK</span>
-                <span class="project-tag">OpenRouter API</span>
-                <span class="project-tag">Telegraf Bot</span>
-                <span class="project-tag">Zod</span>
+                <span class="chip">Bun</span>
+                <span class="chip">TypeScript</span>
+                <span class="chip">Vercel AI SDK</span>
+                <span class="chip">Telegraf</span>
+                <span class="chip">Zod</span>
               </div>
             </div>
             <div class="project-footer">
@@ -302,29 +346,52 @@
             </div>
           </article>
 
-          <!-- Project 3: Expense Approval System (Full-Stack) -->
           <article class="project-card" data-category="fullstack">
+            <div class="project-preview mock-flow">
+              <div class="mock-flow-track" aria-hidden="true">
+                <div class="mock-flow-node">
+                  <span class="mock-node-icon">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                  </span>
+                  <span class="mock-node-label">Employee</span>
+                  <span class="mock-node-status pending">Pending</span>
+                </div>
+                <span class="mock-arrow">&rarr;</span>
+                <div class="mock-flow-node">
+                  <span class="mock-node-icon">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M20 8v6"/><path d="M23 11h-6"/></svg>
+                  </span>
+                  <span class="mock-node-label">Manager</span>
+                  <span class="mock-node-status ok">Approved</span>
+                </div>
+                <span class="mock-arrow">&rarr;</span>
+                <div class="mock-flow-node">
+                  <span class="mock-node-icon">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+                  </span>
+                  <span class="mock-node-label">Admin</span>
+                  <span class="mock-node-status">Audited</span>
+                </div>
+              </div>
+              <div class="mock-invoice">
+                <span class="mock-invoice-id">INV-2041</span>
+                <span class="mock-invoice-amount">&#8377;12,400</span>
+                <span class="mock-invoice-status">Approved</span>
+              </div>
+            </div>
             <div class="project-body">
               <div class="project-meta">
                 <span class="project-focus-tag tag-system">Enterprise System</span>
                 <span class="project-category-badge">Full-Stack</span>
               </div>
-              <h3 class="project-title">Expense Approval System — Multi-Tenant Workflow</h3>
-              <p class="project-desc">
-                A multi-tenant, role-based enterprise expense management and multi-step approval workflow application supporting custom authorization hierarchies, audit trails, and strict tenant data isolation.
-              </p>
-              <ul class="project-features">
-                <li><strong>Sequential Approval Pipeline:</strong> State machine routing submissions through configurable stages (Employee &rarr; Manager &rarr; Admin) with immutable audit history.</li>
-                <li><strong>Multi-Tenant Data Isolation:</strong> <strong>Prisma ORM</strong> with compound PostgreSQL indexing and strict <strong>Zod</strong> runtime schema validation.</li>
-                <li><strong>Production DevOps:</strong> Monorepo architecture containerized with multi-service <strong>Docker Compose</strong>, hot-reloading PostgreSQL 16, and React 19 client.</li>
-              </ul>
+              <h3 class="project-title">Expense Approval System</h3>
+              <p class="project-desc">Multi-tenant workflow engine with role-based approval chains, audit trails, and strict tenant data isolation.</p>
               <div class="project-tags">
-                <span class="project-tag">TypeScript</span>
-                <span class="project-tag">React 19</span>
-                <span class="project-tag">Node.js / Express 5</span>
-                <span class="project-tag">Prisma ORM</span>
-                <span class="project-tag">PostgreSQL</span>
-                <span class="project-tag">Docker Compose</span>
+                <span class="chip">React 19</span>
+                <span class="chip">Express 5</span>
+                <span class="chip">Prisma</span>
+                <span class="chip">PostgreSQL</span>
+                <span class="chip">Docker</span>
               </div>
             </div>
             <div class="project-footer">
@@ -335,28 +402,53 @@
             </div>
           </article>
 
-          <!-- Project 4: CryptoPulse (Mobile & Tools) -->
           <article class="project-card" data-category="tools-mobile">
+            <div class="project-preview mock-phone-wrap">
+              <div class="mock-phone">
+                <div class="mock-phone-notch"></div>
+                <div class="mock-phone-head">
+                  <span class="mock-phone-title">Portfolio</span>
+                  <span class="mock-phone-gain">+12.4%</span>
+                </div>
+                <svg class="mock-spark" viewBox="0 0 160 44" preserveAspectRatio="none" aria-hidden="true">
+                  <defs>
+                    <linearGradient id="sparkFill" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="#10b981" stop-opacity="0.35"/>
+                      <stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
+                    </linearGradient>
+                  </defs>
+                  <polygon points="0,32 22,28 40,34 62,20 84,26 106,12 128,18 150,6 160,6 160,44 0,44" fill="url(#sparkFill)"/>
+                  <polyline points="0,32 22,28 40,34 62,20 84,26 106,12 128,18 150,6 160,6" fill="none" stroke="#34d399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <div class="mock-coin-row">
+                  <span class="mock-coin-name">BTC</span>
+                  <span class="mock-coin-name-full">Bitcoin</span>
+                  <span class="mock-coin-price up">$67,203</span>
+                </div>
+                <div class="mock-coin-row">
+                  <span class="mock-coin-name">ETH</span>
+                  <span class="mock-coin-name-full">Ethereum</span>
+                  <span class="mock-coin-price down">$3,412</span>
+                </div>
+                <div class="mock-coin-row">
+                  <span class="mock-coin-name">SOL</span>
+                  <span class="mock-coin-name-full">Solana</span>
+                  <span class="mock-coin-price up">$158.4</span>
+                </div>
+              </div>
+            </div>
             <div class="project-body">
               <div class="project-meta">
-                <span class="project-focus-tag tag-mobile">Cross-Platform App</span>
+                <span class="project-focus-tag tag-mobile">Cross-Platform</span>
                 <span class="project-category-badge">Mobile &amp; UI</span>
               </div>
-              <h3 class="project-title">CryptoPulse — Real-Time Market Analytics</h3>
-              <p class="project-desc">
-                Cross-platform cryptocurrency market tracking and analytics application built with Flutter &amp; Dart, featuring live streaming price charts, persistent watchlists, and real-time sanitized blockchain news feeds.
-              </p>
-              <ul class="project-features">
-                <li><strong>Hardware-Accelerated Charts:</strong> Dynamic 7-day sparkline vector trend visualizations powered by <strong>fl_chart</strong> and responsive custom dark-mode design tokens.</li>
-                <li><strong>High-Frequency Market Streaming:</strong> Consumes <strong>CoinGecko REST API v3</strong> and parses Cointelegraph RSS feeds with custom XML sanitization.</li>
-                <li><strong>Reactive State Architecture:</strong> Implemented Singleton pattern with <strong>ValueNotifier</strong> and <strong>shared_preferences</strong> for async local cache synchronization.</li>
-              </ul>
+              <h3 class="project-title">CryptoPulse</h3>
+              <p class="project-desc">Cross-platform crypto market app with live streaming charts, watchlists, and sanitized news feeds.</p>
               <div class="project-tags">
-                <span class="project-tag">Flutter</span>
-                <span class="project-tag">Dart</span>
-                <span class="project-tag">fl_chart</span>
-                <span class="project-tag">RESTful APIs</span>
-                <span class="project-tag">Shared Preferences</span>
+                <span class="chip">Flutter</span>
+                <span class="chip">Dart</span>
+                <span class="chip">fl_chart</span>
+                <span class="chip">REST APIs</span>
               </div>
             </div>
             <div class="project-footer">
@@ -367,29 +459,55 @@
             </div>
           </article>
 
-          <!-- Project 5: Multi-Doc RAG Ingestion Pipeline (AI & RAG) -->
           <article class="project-card" data-category="ai-rag">
+            <div class="project-preview mock-flow">
+              <div class="mock-pipeline" aria-hidden="true">
+                <div class="mock-pipe-step">
+                  <span class="mock-pipe-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                  </span>
+                  <span class="mock-pipe-label">PDF &middot; PPTX</span>
+                </div>
+                <span class="mock-arrow">&rarr;</span>
+                <div class="mock-pipe-step">
+                  <span class="mock-pipe-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                  </span>
+                  <span class="mock-pipe-label">Chunk + Encode</span>
+                </div>
+                <span class="mock-arrow">&rarr;</span>
+                <div class="mock-pipe-step">
+                  <span class="mock-pipe-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/></svg>
+                  </span>
+                  <span class="mock-pipe-label">Qdrant</span>
+                </div>
+                <span class="mock-arrow">&rarr;</span>
+                <div class="mock-pipe-step">
+                  <span class="mock-pipe-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m4.19 16.55 3.88-3.88 3 3 6.74-6.74"/><path d="M17 5h1a4 4 0 0 1 4 4v9a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V9a4 4 0 0 1 4-4z"/></svg>
+                  </span>
+                  <span class="mock-pipe-label">Evaluate</span>
+                </div>
+              </div>
+              <div class="mock-bench">
+                <span class="mock-bench-label">Retrieval benchmark</span>
+                <div class="mock-progress-bar"><span class="mock-progress-fill" style="width: 88%"></span></div>
+                <span class="mock-bench-score">Top-K hit 88%</span>
+              </div>
+            </div>
             <div class="project-body">
               <div class="project-meta">
                 <span class="project-focus-tag tag-ai">AI Infrastructure</span>
                 <span class="project-category-badge">AI &amp; RAG</span>
               </div>
-              <h3 class="project-title">Multi-Document RAG Ingestion &amp; Evaluation Pipeline</h3>
-              <p class="project-desc">
-                A modular, format-agnostic document ingestion pipeline and automated evaluation engine built to ingest heterogeneous document formats (PDFs and PPTX decks) into a unified Qdrant vector store.
-              </p>
-              <ul class="project-features">
-                <li><strong>Type-Aware Chunking Strategies:</strong> Employs word-level sliding windows for prose documents and multi-slide context merging for fragmented PowerPoint presentations.</li>
-                <li><strong>Retrieval Evaluation Harness:</strong> Quantitative automated benchmark comparing Top-K hit rates against ground-truth question sets across multiple similarity thresholds.</li>
-                <li><strong>Zero-Cloud Embeddings:</strong> Local vector generation via <strong>sentence-transformers</strong> (<code>all-MiniLM-L6-v2</code>) with batch upserting into <strong>Qdrant Cloud</strong>.</li>
-              </ul>
+              <h3 class="project-title">Multi-Doc RAG Pipeline</h3>
+              <p class="project-desc">Format-agnostic ingestion and automated retrieval evaluation across PDFs and slide decks.</p>
               <div class="project-tags">
-                <span class="project-tag">Python 3.10+</span>
-                <span class="project-tag">Qdrant Cloud</span>
-                <span class="project-tag">Sentence Transformers</span>
-                <span class="project-tag">pypdf</span>
-                <span class="project-tag">python-pptx</span>
-                <span class="project-tag">Pydantic</span>
+                <span class="chip">Python</span>
+                <span class="chip">Qdrant</span>
+                <span class="chip">Sentence Transformers</span>
+                <span class="chip">Pydantic</span>
               </div>
             </div>
             <div class="project-footer">
@@ -400,28 +518,32 @@
             </div>
           </article>
 
-          <!-- Project 6: RAG Quiz Generator (AI & RAG) -->
           <article class="project-card" data-category="ai-rag">
+            <div class="project-preview mock-mcq">
+              <div class="mock-mcq-body">
+                <div class="mock-mcq-q">Q &middot; What is the capital of France?</div>
+                <div class="mock-option correct"><span class="mock-option-key">A</span> Paris <span class="mock-check">&#10003;</span></div>
+                <div class="mock-option"><span class="mock-option-key">B</span> London</div>
+                <div class="mock-option"><span class="mock-option-key">C</span> Berlin</div>
+                <div class="mock-option"><span class="mock-option-key">D</span> Madrid</div>
+                <div class="mock-mcq-foot">
+                  <span class="mock-mcq-source">Grounded &middot; page 4</span>
+                  <span class="mock-ai-badge">AI</span>
+                </div>
+              </div>
+            </div>
             <div class="project-body">
               <div class="project-meta">
                 <span class="project-focus-tag tag-ai">AI Pipeline</span>
                 <span class="project-category-badge">AI &amp; RAG</span>
               </div>
-              <h3 class="project-title">RAG Quiz Generator — Automated MCQ Synthesis</h3>
-              <p class="project-desc">
-                An automated RAG pipeline parsing multi-page PDF documents, indexing embeddings into hosted Qdrant Cloud collections, and synthesizing strictly schema-validated MCQs via Gemini 2.5 Flash.
-              </p>
-              <ul class="project-features">
-                <li><strong>Contract-First Pydantic v2 Enforcement:</strong> Defined strict structural contracts enforcing exact 4-choice options, bound integer indices, and grounded explanations.</li>
-                <li><strong>Error-Aware Corrective Retry Loop:</strong> 3-attempt retry harness capturing validation errors and feeding raw trace feedback back to the LLM for guaranteed JSON convergence.</li>
-                <li><strong>Topic-Driven Semantic Retrieval:</strong> Query vectors represent thematic curriculum topics retrieving dense top-k context segments for grounded question authoring.</li>
-              </ul>
+              <h3 class="project-title">RAG Quiz Generator</h3>
+              <p class="project-desc">Automated MCQ synthesis with contract-first validation and corrective retry on topic-grounded retrieval.</p>
               <div class="project-tags">
-                <span class="project-tag">Python</span>
-                <span class="project-tag">Gemini 2.5 Flash</span>
-                <span class="project-tag">Qdrant Cloud</span>
-                <span class="project-tag">Pydantic v2</span>
-                <span class="project-tag">Sentence Transformers</span>
+                <span class="chip">Python</span>
+                <span class="chip">Gemini</span>
+                <span class="chip">Qdrant</span>
+                <span class="chip">Pydantic v2</span>
               </div>
             </div>
             <div class="project-footer">
@@ -432,28 +554,36 @@
             </div>
           </article>
 
-          <!-- Project 7: PDF RAG Basics (AI & RAG) -->
-          <article class="project-card" data-category="ai-rag">
+          <article class="project-card featured" data-category="ai-rag">
+            <div class="project-preview mock-split">
+              <div class="mock-doc" aria-hidden="true">
+                <div class="mock-doc-line w90"></div>
+                <div class="mock-doc-line w70"></div>
+                <div class="mock-doc-line w85"></div>
+                <div class="mock-doc-line w60"></div>
+                <div class="mock-doc-line w75"></div>
+                <div class="mock-doc-mark">p.12</div>
+              </div>
+              <div class="mock-term-body">
+                <div class="mock-term-line dim">ingest &gt; lecture.pdf</div>
+                <div class="mock-term-line ok"><span class="mock-check-marker">&#10003;</span> 24 chunks &middot; 384-dim</div>
+                <div class="mock-term-line dim">Q: Newton&rsquo;s 2nd law?</div>
+                <div class="mock-term-line ans">A: F = ma &hellip;</div>
+                <div class="mock-term-line cite">cite &middot; page 12</div>
+              </div>
+            </div>
             <div class="project-body">
               <div class="project-meta">
                 <span class="project-focus-tag tag-ai">Foundational RAG</span>
                 <span class="project-category-badge">AI &amp; RAG</span>
               </div>
-              <h3 class="project-title">PDF RAG Basics — Resilient Local Vector Engine</h3>
-              <p class="project-desc">
-                A lightweight, fully local command-line RAG system written in Python that ingests PDFs, creates semantic vector embeddings, and generates page-cited answers with an automated 3-tier LLM fallback hierarchy.
-              </p>
-              <ul class="project-features">
-                <li><strong>Resilient Multi-Provider Fallback:</strong> Automated 3-tier failover dispatcher across Google Gemini &rarr; OpenRouter &rarr; offline local LM Studio instances.</li>
-                <li><strong>Zero-Cloud Local Embeddings:</strong> 384-dimensional dense representations via <code>all-MiniLM-L6-v2</code> persisted to local disk with <strong>ChromaDB</strong> HNSW cosine index.</li>
-                <li><strong>Deterministic Source Citations:</strong> Word-level sliding window chunker maintaining 12.5% overlap with chunk-to-source-page provenance tracking.</li>
-              </ul>
+              <h3 class="project-title">PDF RAG Basics</h3>
+              <p class="project-desc">Fully local CLI RAG engine with page-cited answers and multi-provider LLM failover.</p>
               <div class="project-tags">
-                <span class="project-tag">Python</span>
-                <span class="project-tag">ChromaDB</span>
-                <span class="project-tag">Sentence Transformers</span>
-                <span class="project-tag">Google GenAI</span>
-                <span class="project-tag">LM Studio</span>
+                <span class="chip">Python</span>
+                <span class="chip">ChromaDB</span>
+                <span class="chip">Sentence Transformers</span>
+                <span class="chip">LM Studio</span>
               </div>
             </div>
             <div class="project-footer">
@@ -468,126 +598,109 @@
       </div>
     </section>
 
-    <!-- Achievements & Milestones Section -->
     <section id="achievements" class="section">
       <div class="container">
         <div class="section-header">
           <p class="section-subtitle">Milestones</p>
           <h2 class="section-title">Hackathons &amp; Achievements</h2>
-          <p class="section-lead">Competitive development sprints building production-ready enterprise workflows and custom automation systems.</p>
+          <p class="section-lead">Competitive sprints building production-ready enterprise workflows and automation systems.</p>
         </div>
-        
-        <div class="timeline">
-          <!-- Odoo x Adani -->
-          <article class="timeline-item">
-            <div class="timeline-marker" aria-hidden="true"></div>
-            <div class="timeline-content">
-              <div class="timeline-header">
-                <span class="timeline-badge badge-highlight">Finalist</span>
-                <span class="timeline-date">January 2026</span>
-              </div>
-              <h3 class="timeline-title">Finalist &mdash; Odoo x Adani University Hackathon</h3>
-              <p class="timeline-desc">
-                Competed in an intense 48-hour sprint designing and implementing production-ready enterprise automation systems and custom business workflows addressing corporate efficiency bottlenecks.
-              </p>
-              <div class="timeline-tags">
-                <span class="skill-tag">ERP Systems</span>
-                <span class="skill-tag">Enterprise Workflows</span>
-                <span class="skill-tag">Automation</span>
-              </div>
+
+        <div class="achievements-grid">
+          <article class="achievement-card">
+            <div class="achievement-top">
+              <span class="achievement-badge badge-highlight">Finalist</span>
+              <span class="achievement-date">January 2026</span>
+            </div>
+            <h3 class="achievement-title">Odoo x Adani University Hackathon</h3>
+            <p class="achievement-desc">Enterprise automation and custom business workflows designed in a 48-hour sprint.</p>
+            <div class="achievement-tags">
+              <span class="chip">ERP Systems</span>
+              <span class="chip">Automation</span>
+              <span class="chip">Workflows</span>
             </div>
           </article>
 
-          <!-- Odoo x Charusat -->
-          <article class="timeline-item">
-            <div class="timeline-marker" aria-hidden="true"></div>
-            <div class="timeline-content">
-              <div class="timeline-header">
-                <span class="timeline-badge badge-qualified">Qualified</span>
-                <span class="timeline-date">March 2025</span>
-              </div>
-              <h3 class="timeline-title">Qualified &mdash; Odoo x Charusat Hackathon</h3>
-              <p class="timeline-desc">
-                Qualified by architecting and developing modular ERP solutions, dynamic reporting structures, and business process automation modules under competitive time constraints.
-              </p>
-              <div class="timeline-tags">
-                <span class="skill-tag">Module Architecture</span>
-                <span class="skill-tag">Process Optimization</span>
-              </div>
+          <article class="achievement-card">
+            <div class="achievement-top">
+              <span class="achievement-badge badge-qualified">Qualified</span>
+              <span class="achievement-date">March 2025</span>
+            </div>
+            <h3 class="achievement-title">Odoo x Charusat Hackathon</h3>
+            <p class="achievement-desc">Modular ERP solutions and process automation built under competitive time constraints.</p>
+            <div class="achievement-tags">
+              <span class="chip">Module Architecture</span>
+              <span class="chip">Process Optimization</span>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Education Section -->
     <section id="education" class="section">
       <div class="container">
         <div class="section-header">
           <p class="section-subtitle">Background</p>
-          <h2 class="section-title">Academic Education</h2>
-          <p class="section-lead">Foundational Computer Science education with a strong emphasis on algorithms, distributed databases, and software engineering principles.</p>
+          <h2 class="section-title">Education</h2>
+          <p class="section-lead">Computer Science education with an emphasis on algorithms, distributed databases, and software engineering.</p>
         </div>
 
         <div class="education-grid">
           <article class="education-card active-degree">
             <div class="education-icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
             </div>
             <div class="education-body">
               <div class="education-status-tag">Undergraduate &bull; Current</div>
               <h3 class="education-degree">B.Tech in Computer Science and Engineering</h3>
               <p class="education-school">Indus University, Ahmedabad</p>
               <div class="education-date">July 2023 &ndash; June 2027</div>
-              <p class="education-notes">Focusing on Object-Oriented Programming, DBMS, Operating Systems, Computer Networks, and AI Systems.</p>
+              <p class="education-notes">Focus on AI systems, distributed databases, and software engineering.</p>
             </div>
           </article>
 
           <article class="education-card">
             <div class="education-icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10"/><path d="M6 10h10"/></svg>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10"/><path d="M6 10h10"/></svg>
             </div>
             <div class="education-body">
               <div class="education-status-tag">Higher Secondary</div>
               <h3 class="education-degree">Higher Secondary Education (HSC)</h3>
               <p class="education-school">Gayatri Vidhya Vihar</p>
               <div class="education-date">June 2021 &ndash; May 2023</div>
-              <p class="education-notes">Strong foundation in Mathematics, Physics, and Analytical Thinking.</p>
+              <p class="education-notes">Foundation in mathematics, physics, and analytical thinking.</p>
             </div>
           </article>
 
           <article class="education-card">
             <div class="education-icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
             </div>
             <div class="education-body">
               <div class="education-status-tag">Secondary</div>
               <h3 class="education-degree">Secondary School Certificate (SSC)</h3>
               <p class="education-school">S.D.A. Higher Secondary School</p>
               <div class="education-date">Till May 2021</div>
-              <p class="education-notes">Academic excellence in foundational sciences and computer fundamentals.</p>
+              <p class="education-notes">Foundation in sciences and computer fundamentals.</p>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="section">
       <div class="container">
         <div class="section-header">
           <p class="section-subtitle">Get In Touch</p>
           <h2 class="section-title">Let's Build Together</h2>
-          <p class="section-lead">Interested in collaborating on AI agents, full-stack web applications, or open-source tools? Reach out directly.</p>
+          <p class="section-lead">Open to collaborations on AI agents, full-stack applications, and open-source tooling.</p>
         </div>
-        
+
         <div class="contact-grid">
-          <!-- Info Details -->
           <div class="contact-info">
-            <!-- GitHub Connection -->
             <a href="https://github.com/SwetPatel2706" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="GitHub Profile">
               <div class="contact-icon" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
               </div>
               <div class="contact-details">
                 <h4>GitHub</h4>
@@ -595,10 +708,9 @@
               </div>
             </a>
 
-            <!-- LinkedIn Connection -->
             <a href="https://www.linkedin.com/in/swetpatel2706/" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="LinkedIn Profile">
               <div class="contact-icon" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
               </div>
               <div class="contact-details">
                 <h4>LinkedIn</h4>
@@ -606,10 +718,9 @@
               </div>
             </a>
 
-            <!-- Email Connection -->
             <a href="mailto:swet2706.work@gmail.com" class="contact-card" aria-label="Email Swet Patel">
               <div class="contact-icon" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
               </div>
               <div class="contact-details">
                 <h4>Email</h4>
@@ -617,10 +728,9 @@
               </div>
             </a>
 
-            <!-- Location Details -->
             <div class="contact-card contact-card-static">
               <div class="contact-icon" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
               </div>
               <div class="contact-details">
                 <h4>Location</h4>
@@ -629,23 +739,22 @@
             </div>
           </div>
 
-          <!-- Interactive Form -->
           <form class="contact-form" id="contact-form" novalidate>
             <div class="form-group">
               <label for="form-name" class="form-label">Full Name</label>
               <input type="text" id="form-name" class="form-control" placeholder="Your Name" required>
             </div>
-            
+
             <div class="form-group">
               <label for="form-email" class="form-label">Email Address</label>
               <input type="email" id="form-email" class="form-control" placeholder="your.email@example.com" required>
             </div>
-            
+
             <div class="form-group">
               <label for="form-message" class="form-label">Project / Collaboration Details</label>
               <textarea id="form-message" rows="4" class="form-control" placeholder="Tell me about your project or opportunity..." required></textarea>
             </div>
-            
+
             <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
               <span>Send Message</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
@@ -657,7 +766,6 @@
 
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="container footer-container">
       <div class="footer-brand">
@@ -691,7 +799,6 @@
     </div>
   </footer>
 
-  <!-- CV Viewer Modal -->
   <div class="modal" id="resume-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
     <div class="modal-backdrop"></div>
     <div class="modal-container">
@@ -700,8 +807,7 @@
         <h3 class="modal-title" id="modal-title">Resume / CV</h3>
         <p class="modal-desc">Swet Patel &bull; Full-Stack &amp; AI Systems Engineer</p>
       </div>
-      
-      <!-- Academic details inside modal -->
+
       <div class="modal-section">
         <h4 class="modal-section-title">Education Highlights</h4>
         <div class="modal-edu-list">
@@ -726,13 +832,13 @@
       <div class="modal-section">
         <h4 class="modal-section-title">Key Specializations</h4>
         <div class="skill-tags">
-          <span class="skill-tag">Autonomous Agents</span>
-          <span class="skill-tag">RAG Pipelines</span>
-          <span class="skill-tag">FastAPI</span>
-          <span class="skill-tag">React 19</span>
-          <span class="skill-tag">Qdrant Cloud</span>
-          <span class="skill-tag">PostgreSQL</span>
-          <span class="skill-tag">Docker</span>
+          <span class="chip">Autonomous Agents</span>
+          <span class="chip">RAG Pipelines</span>
+          <span class="chip">FastAPI</span>
+          <span class="chip">React 19</span>
+          <span class="chip">Qdrant Cloud</span>
+          <span class="chip">PostgreSQL</span>
+          <span class="chip">Docker</span>
         </div>
       </div>
 
@@ -745,7 +851,6 @@
     </div>
   </div>
 
-  <!-- Script -->
   <script src="script.js"></script>
 </body>
 </html>
