@@ -1,1 +1,4 @@
 PORTFOLIO_DATA.md
+node_modules/
+.env
+.env.local

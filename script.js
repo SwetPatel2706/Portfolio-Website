@@ -122,44 +122,81 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- Interactive Contact Form Submission ---
   const contactForm = document.getElementById('contact-form');
   const submitBtn = document.getElementById('form-submit-btn');
+  const formStatus = document.getElementById('form-status');
+  const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   if (contactForm && submitBtn) {
-    contactForm.addEventListener('submit', (e) => {
+    const setStatus = (message, type) => {
+      if (!formStatus) return;
+      formStatus.textContent = message;
+      formStatus.className = `form-status form-status-${type}`;
+    };
+
+    const setInputError = (input, hasError) => {
+      input.style.borderColor = hasError ? '#ef4444' : '';
+    };
+
+    contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
+      setStatus('', '');
 
       const nameInput = document.getElementById('form-name');
       const emailInput = document.getElementById('form-email');
       const messageInput = document.getElementById('form-message');
 
-      // Simple validation feedback
       let isValid = true;
       [nameInput, emailInput, messageInput].forEach(input => {
-        if (!input || !input.value.trim()) {
-          if (input) input.style.borderColor = '#ef4444';
+        const invalid = !input || !input.value.trim() || (input === emailInput && !EMAIL_REGEX.test(input.value.trim()));
+        if (invalid) {
+          if (input) setInputError(input, true);
           isValid = false;
         } else {
-          if (input) input.style.borderColor = '';
+          if (input) setInputError(input, false);
         }
       });
 
-      if (!isValid) return;
+      if (!isValid) {
+        setStatus('Please fill in all fields with a valid email.', 'error');
+        return;
+      }
 
-      // Simulate sending progress
       const originalContent = submitBtn.innerHTML;
       submitBtn.innerHTML = '<span>Sending...</span>';
       submitBtn.disabled = true;
 
-      setTimeout(() => {
+      try {
+        const response = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            name: nameInput.value.trim(),
+            email: emailInput.value.trim(),
+            message: messageInput.value.trim()
+          })
+        });
+
+        const data = await response.json().catch(() => ({}));
+
+        if (!response.ok) {
+          throw new Error(data.error || 'Failed to send message.');
+        }
+
         submitBtn.innerHTML = '<span>Message Sent!</span>';
         submitBtn.style.background = '#22c55e';
         contactForm.reset();
-
+        setStatus('Thanks! Your message has been sent.', 'success');
+      } catch (err) {
+        submitBtn.innerHTML = originalContent;
+        setStatus(err.message || 'Something went wrong. Please try again later.', 'error');
+      } finally {
+        submitBtn.disabled = false;
         setTimeout(() => {
-          submitBtn.innerHTML = originalContent;
-          submitBtn.style.background = '';
-          submitBtn.disabled = false;
+          if (submitBtn.innerHTML.includes('Message Sent')) {
+            submitBtn.innerHTML = originalContent;
+            submitBtn.style.background = '';
+          }
         }, 3000);
-      }, 1200);
+      }
     });
   }
 });
