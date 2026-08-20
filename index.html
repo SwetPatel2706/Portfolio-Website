@@ -3,13 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Swet Patel | Full-Stack & AI Systems Developer</title>
-  <meta name="description" content="Portfolio of Swet Patel, a hands-on Computer Science engineer specializing in Full-Stack development, AI orchestration, and system optimization.">
+  <title>Swet Patel | Full-Stack &amp; AI Systems Engineer</title>
+  <meta name="description" content="Portfolio of Swet Patel, a Full-Stack & AI Systems Engineer specializing in Autonomous AI Agents, RAG Pipelines, Multi-Tenant Architectures, and Modern Web Systems.">
+  <meta name="keywords" content="Swet Patel, Full-Stack Developer, AI Engineer, RAG, Autonomous Agents, TypeScript, Python, FastAPI, React, Node.js">
+  <meta name="author" content="Swet Patel">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Swet Patel | Full-Stack & AI Systems Engineer">
+  <meta property="og:description" content="Explore production projects in AI Agents, RAG Pipelines, Multi-Tenant Workflows, and Full-Stack Engineering.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://portfolio-website-rosy-two-89.vercel.app/">
   
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   
   <!-- Styling -->
   <link rel="stylesheet" href="style.css">
@@ -31,7 +39,8 @@
         <li><a href="#home" class="nav-link active">Home</a></li>
         <li><a href="#skills" class="nav-link">Skills</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#achievements" class="nav-link">Milestones</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
     </div>
@@ -43,20 +52,32 @@
     <section id="home" class="hero-section">
       <div class="container hero-grid">
         <div class="hero-content">
-          <div class="hero-badge">
-            <span class="hero-badge-dot"></span>
-            <span>Available for Opportunities</span>
+          <div class="hero-badges-wrapper">
+            <div class="hero-badge">
+              <span class="hero-badge-dot"></span>
+              <span>Available for Opportunities</span>
+            </div>
+            <div class="hero-badge badge-subtle">
+              <span>Indus University &bull; B.Tech CSE '27</span>
+            </div>
           </div>
+          
           <h1 class="hero-title">
             Hi, I'm Swet Patel.<br>
-            <span>Full-Stack &amp; AI Systems Engineer</span>
+            <span class="gradient-text">Full-Stack &amp; AI Systems Engineer</span>
           </h1>
           <p class="hero-desc">
-            Computer Science student specializing in building production-style full-stack systems, secure multi-tenant architectures, and autonomous AI agents. I combine clean code principles with modern orchestrations like the Vercel AI SDK and containerized workflows to deliver high-performance solutions.
+            Computer Science undergraduate specializing in full-stack TypeScript/Python engineering, retrieval-augmented generation (RAG) pipelines, and autonomous AI agents. Experienced in building production-grade multi-tenant web applications, containerized environments, and high-performance developer tools.
           </p>
           <div class="hero-actions">
-            <a href="#projects" class="btn btn-primary" aria-label="View Swet's Projects">View Projects</a>
-            <button class="btn btn-secondary" id="open-resume-btn" aria-label="Download or View Resume">View CV</button>
+            <a href="#projects" class="btn btn-primary" aria-label="View Swet's Projects">
+              <span>Explore Projects</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <button class="btn btn-secondary" id="open-resume-btn" aria-label="Download or View Resume">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+              <span>View Resume</span>
+            </button>
           </div>
         </div>
         
@@ -64,20 +85,25 @@
           <div class="hero-art-glow"></div>
           <div class="hero-art-card" aria-hidden="true">
             <div class="art-header">
-              <span class="art-dot"></span>
-              <span class="art-dot"></span>
-              <span class="art-dot"></span>
+              <span class="art-dot dot-red"></span>
+              <span class="art-dot dot-yellow"></span>
+              <span class="art-dot dot-green"></span>
+              <span class="art-tab-title">engineer.ts</span>
             </div>
-            <pre class="art-code"><code><span class="keyword">const</span> developer = {
+            <pre class="art-code"><code><span class="keyword">const</span> engineer = {
   name: <span class="string">'Swet Patel'</span>,
-  role: <span class="string">'Full-Stack / AI Developer'</span>,
-  skills: [
-    <span class="string">'TypeScript'</span>,
-    <span class="string">'Bun'</span>,
-    <span class="string">'AI SDK'</span>,
-    <span class="string">'Docker'</span>
+  role: <span class="string">'Full-Stack &amp; AI Systems'</span>,
+  specializations: [
+    <span class="string">'Autonomous AI Agents'</span>,
+    <span class="string">'RAG Pipelines'</span>,
+    <span class="string">'Multi-Tenant Systems'</span>
   ],
-  passion: <span class="string">'Autonomous Systems'</span>
+  coreStack: {
+    languages: [<span class="string">'TypeScript'</span>, <span class="string">'Python'</span>],
+    frameworks: [<span class="string">'React 19'</span>, <span class="string">'FastAPI'</span>, <span class="string">'Node.js'</span>],
+    aiVector: [<span class="string">'Qdrant'</span>, <span class="string">'Gemini'</span>, <span class="string">'Vercel AI SDK'</span>]
+  },
+  location: <span class="string">'Ahmedabad, India'</span>
 };</code></pre>
           </div>
         </div>
@@ -88,72 +114,93 @@
     <section id="skills" class="section">
       <div class="container">
         <div class="section-header">
-          <p class="section-subtitle">Capabilities</p>
-          <h2 class="section-title">Technical Skills Matrix</h2>
+          <p class="section-subtitle">Technical Matrix</p>
+          <h2 class="section-title">Skills &amp; Capabilities</h2>
+          <p class="section-lead">A comprehensive toolkit spanning modern frontend architectures, high-performance backends, autonomous AI agent frameworks, and distributed database ecosystems.</p>
         </div>
         
         <div class="skills-grid">
           <!-- Programming Languages -->
           <article class="skill-card">
-            <div class="skill-icon" aria-hidden="true">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
+            <div class="skill-card-header">
+              <div class="skill-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
+              </div>
+              <h3 class="skill-title">Languages</h3>
             </div>
-            <h3 class="skill-title">Languages</h3>
+            <p class="skill-desc">Strong typed functional and object-oriented programming for scalable systems.</p>
             <div class="skill-tags">
               <span class="skill-tag">TypeScript</span>
               <span class="skill-tag">JavaScript</span>
               <span class="skill-tag">Python</span>
               <span class="skill-tag">SQL</span>
-              <span class="skill-tag">HTML / CSS</span>
+              <span class="skill-tag">HTML5 / CSS3</span>
               <span class="skill-tag">PHP</span>
               <span class="skill-tag">C++</span>
+              <span class="skill-tag">Dart</span>
             </div>
           </article>
 
-          <!-- Web & Mobile -->
+          <!-- Web & Mobile Frameworks -->
           <article class="skill-card">
-            <div class="skill-icon" aria-hidden="true">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            <div class="skill-card-header">
+              <div class="skill-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              </div>
+              <h3 class="skill-title">Web &amp; Mobile</h3>
             </div>
-            <h3 class="skill-title">Web &amp; Mobile</h3>
+            <p class="skill-desc">Modern single-page applications, design systems, and cross-platform native clients.</p>
             <div class="skill-tags">
-              <span class="skill-tag">React.js</span>
+              <span class="skill-tag">React.js 19</span>
+              <span class="skill-tag">Vite</span>
+              <span class="skill-tag">React Router v7</span>
+              <span class="skill-tag">Zustand</span>
+              <span class="skill-tag">Flutter</span>
+              <span class="skill-tag">Tailwind CSS</span>
+              <span class="skill-tag">Design Systems</span>
+            </div>
+          </article>
+
+          <!-- AI & Backend Systems -->
+          <article class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"/><path d="M12 18v4"/><path d="M4.93 4.93l2.83 2.83"/><path d="M16.24 16.24l2.83 2.83"/><path d="M2 12h4"/><path d="M18 12h4"/><path d="M4.93 19.07l2.83-2.83"/><path d="M16.24 7.76l2.83-2.83"/></svg>
+              </div>
+              <h3 class="skill-title">AI &amp; Backend Systems</h3>
+            </div>
+            <p class="skill-desc">Autonomous LLM agent orchestration, RAG architectures, and asynchronous APIs.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">FastAPI</span>
               <span class="skill-tag">Node.js</span>
               <span class="skill-tag">Express.js</span>
               <span class="skill-tag">Django</span>
-              <span class="skill-tag">Flutter</span>
+              <span class="skill-tag">Vercel AI SDK</span>
+              <span class="skill-tag">Google Gemini / GenAI</span>
+              <span class="skill-tag">Sentence Transformers</span>
+              <span class="skill-tag">Pydantic v2</span>
             </div>
           </article>
 
-          <!-- Databases -->
+          <!-- Databases, Cloud & DevOps -->
           <article class="skill-card">
-            <div class="skill-icon" aria-hidden="true">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/></svg>
+            <div class="skill-card-header">
+              <div class="skill-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/></svg>
+              </div>
+              <h3 class="skill-title">Databases &amp; DevOps</h3>
             </div>
-            <h3 class="skill-title">Databases &amp; Backend</h3>
+            <p class="skill-desc">Relational DBMS, vector databases, containerized workflows, and cloud deployments.</p>
             <div class="skill-tags">
               <span class="skill-tag">PostgreSQL</span>
-              <span class="skill-tag">MongoDB</span>
-              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">Qdrant Cloud</span>
+              <span class="skill-tag">ChromaDB</span>
               <span class="skill-tag">Supabase</span>
               <span class="skill-tag">Prisma ORM</span>
-            </div>
-          </article>
-
-          <!-- Developer Tools & Concepts -->
-          <article class="skill-card">
-            <div class="skill-icon" aria-hidden="true">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-            </div>
-            <h3 class="skill-title">Tools &amp; Core Concepts</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">Git &amp; GitHub</span>
-              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Docker Compose</span>
               <span class="skill-tag">Bun</span>
+              <span class="skill-tag">Git / GitHub</span>
               <span class="skill-tag">Vercel</span>
-              <span class="skill-tag">Commander.js</span>
-              <span class="skill-tag">REST APIs</span>
-              <span class="skill-tag">OOP / DBMS</span>
             </div>
           </article>
         </div>
@@ -165,136 +212,360 @@
       <div class="container">
         <div class="section-header">
           <p class="section-subtitle">Portfolio</p>
-          <h2 class="section-title">Interactive Featured Projects</h2>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-lead">A collection of autonomous AI agents, enterprise multi-tenant systems, RAG pipelines, and cross-platform applications.</p>
+        </div>
+
+        <!-- Project Filters -->
+        <div class="project-filter-container">
+          <div class="filter-tabs" role="tablist" aria-label="Project Category Filters">
+            <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">
+              All Projects <span class="filter-count">7</span>
+            </button>
+            <button class="filter-btn" data-filter="ai-rag" role="tab" aria-selected="false">
+              AI &amp; RAG Systems <span class="filter-count">4</span>
+            </button>
+            <button class="filter-btn" data-filter="fullstack" role="tab" aria-selected="false">
+              Full-Stack &amp; Cloud <span class="filter-count">2</span>
+            </button>
+            <button class="filter-btn" data-filter="tools-mobile" role="tab" aria-selected="false">
+              Dev Tools &amp; Mobile <span class="filter-count">2</span>
+            </button>
+          </div>
         </div>
         
-        <div class="projects-grid">
-          <!-- devclaw-cli -->
-          <article class="project-card">
+        <div class="projects-grid" id="projects-grid">
+          
+          <!-- Project 1: ExamAI (AI & RAG / Full-Stack) -->
+          <article class="project-card" data-category="ai-rag fullstack">
             <div class="project-body">
               <div class="project-meta">
-                <span class="project-focus-tag">AI Orchestration Layer</span>
-                <span class="project-tag">Bun Runtime</span>
+                <span class="project-focus-tag tag-ai">Capstone Platform</span>
+                <span class="project-category-badge">AI &amp; RAG</span>
               </div>
-              <h3 class="project-title">devclaw-cli</h3>
+              <h3 class="project-title">ExamAI — AI-Powered Exam Prep Platform</h3>
               <p class="project-desc">
-                An autonomous, terminal-native software development agent engineered using Bun, the Vercel AI SDK, and OpenRouter for streaming LLM code changes.
+                Full-stack, AI-powered study platform where students query teacher-approved course materials via RAG, take AI-generated and teacher-authored quizzes, and study flashcards with detailed performance analytics dashboards.
               </p>
               <ul class="project-features">
-                <li>Integrated <strong>Vercel AI SDK</strong> + <strong>OpenRouter API</strong> for generative streaming and file diffs.</li>
-                <li>Strict workspace isolation with a custom <strong>Safe Staging Architecture</strong> preventing path traversals.</li>
-                <li>Dual-adapter control: Terminal interactive CLI via <strong>Clack Prompts</strong> or remote control via a <strong>Telegram Bot</strong>.</li>
+                <li><strong>Grounded RAG Pipeline:</strong> Integrated <strong>Google Gemini</strong> structured output with metadata-filtered <strong>Qdrant Cloud</strong> vector retrieval and local <strong>sentence-transformers</strong> dense embeddings.</li>
+                <li><strong>Decoupled Architecture:</strong> <strong>FastAPI</strong> backend (Python 3.14) with <strong>SQLAlchemy 2</strong> + <strong>Supabase PostgreSQL</strong> and <strong>React 19</strong> (Vite 8, Tailwind CSS v4, Zustand).</li>
+                <li><strong>Deterministic Generation:</strong> Closed-loop validation retry harness guaranteeing 100% schema-valid MCQ and flashcard synthesis.</li>
               </ul>
               <div class="project-tags">
-                <span class="project-tag">Vercel AI SDK</span>
-                <span class="project-tag">OpenRouter API</span>
-                <span class="project-tag">Commander.js</span>
-                <span class="project-tag">Telegraf</span>
+                <span class="project-tag">Python / FastAPI</span>
+                <span class="project-tag">React 19</span>
+                <span class="project-tag">Qdrant Cloud</span>
+                <span class="project-tag">Google Gemini</span>
+                <span class="project-tag">Supabase</span>
+                <span class="project-tag">SQLAlchemy 2</span>
               </div>
             </div>
             <div class="project-footer">
-              <a href="https://github.com/SwetPatel2706/devclaw-cli" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View devclaw-cli on GitHub">
-                <span>View Code</span>
+              <a href="https://github.com/SwetPatel2706/examai-rag" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View ExamAI on GitHub">
+                <span>View Repository</span>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
               </a>
             </div>
           </article>
 
-          <!-- Expense Approval System -->
-          <article class="project-card">
+          <!-- Project 2: DevClaw CLI (AI & RAG / Dev Tools) -->
+          <article class="project-card" data-category="ai-rag tools-mobile">
             <div class="project-body">
               <div class="project-meta">
-                <span class="project-focus-tag">Database Modeling</span>
-                <span class="project-tag">Full-Stack TS</span>
+                <span class="project-focus-tag tag-agent">Autonomous Agent</span>
+                <span class="project-category-badge">Dev Tools</span>
               </div>
-              <h3 class="project-title">Expense Approval System</h3>
+              <h3 class="project-title">DevClaw CLI — Autonomous AI Coding Agent</h3>
               <p class="project-desc">
-                A secure multi-tenant corporate expense authorization system supporting automated workflow hierarchy rules and secure environment replication.
+                An interactive dual-interface (Terminal TUI and Telegram Bot) autonomous AI software engineering agent built on Bun, TypeScript, and the Vercel AI SDK Core with safe sandboxed execution loops.
               </p>
               <ul class="project-features">
-                <li>Multi-tiered approval pipelines routing items from Employee ➔ Manager ➔ Administrator.</li>
-                <li>Backend tenant separation using <strong>Prisma ORM</strong> and payload checking via <strong>Zod validations</strong>.</li>
-                <li>Complete environment setup package containerized via <strong>Docker Compose</strong> with automated database hot-reloads.</li>
+                <li><strong>Vercel AI SDK Core:</strong> Orchestrates streaming multi-model LLM generation (via <strong>OpenRouter API</strong>) with Zod tool-calling schemas for planning, indexing, and executing codebase mutations.</li>
+                <li><strong>Safe Staging Architecture:</strong> Strict workspace isolation and path-traversal sandboxing with human-in-the-loop diff confirmations before applying changes.</li>
+                <li><strong>Dual Control Surface:</strong> Rich terminal experience using <strong>@clack/prompts</strong> and remote mobile command &amp; control via <strong>Telegraf Telegram Bot</strong>.</li>
               </ul>
               <div class="project-tags">
-                <span class="project-tag">Prisma ORM</span>
+                <span class="project-tag">Bun Runtime</span>
+                <span class="project-tag">TypeScript</span>
+                <span class="project-tag">Vercel AI SDK</span>
+                <span class="project-tag">OpenRouter API</span>
+                <span class="project-tag">Telegraf Bot</span>
                 <span class="project-tag">Zod</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/SwetPatel2706/devclaw-cli" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View DevClaw CLI on GitHub">
+                <span>View Repository</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3: Expense Approval System (Full-Stack) -->
+          <article class="project-card" data-category="fullstack">
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-focus-tag tag-system">Enterprise System</span>
+                <span class="project-category-badge">Full-Stack</span>
+              </div>
+              <h3 class="project-title">Expense Approval System — Multi-Tenant Workflow</h3>
+              <p class="project-desc">
+                A multi-tenant, role-based enterprise expense management and multi-step approval workflow application supporting custom authorization hierarchies, audit trails, and strict tenant data isolation.
+              </p>
+              <ul class="project-features">
+                <li><strong>Sequential Approval Pipeline:</strong> State machine routing submissions through configurable stages (Employee &rarr; Manager &rarr; Admin) with immutable audit history.</li>
+                <li><strong>Multi-Tenant Data Isolation:</strong> <strong>Prisma ORM</strong> with compound PostgreSQL indexing and strict <strong>Zod</strong> runtime schema validation.</li>
+                <li><strong>Production DevOps:</strong> Monorepo architecture containerized with multi-service <strong>Docker Compose</strong>, hot-reloading PostgreSQL 16, and React 19 client.</li>
+              </ul>
+              <div class="project-tags">
+                <span class="project-tag">TypeScript</span>
+                <span class="project-tag">React 19</span>
+                <span class="project-tag">Node.js / Express 5</span>
+                <span class="project-tag">Prisma ORM</span>
                 <span class="project-tag">PostgreSQL</span>
                 <span class="project-tag">Docker Compose</span>
               </div>
             </div>
             <div class="project-footer">
               <a href="https://github.com/SwetPatel2706/expense-approval-system" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Expense Approval System on GitHub">
-                <span>View Code</span>
+                <span>View Repository</span>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
               </a>
             </div>
           </article>
 
-          <!-- CryptoPulse -->
-          <article class="project-card">
+          <!-- Project 4: CryptoPulse (Mobile & Tools) -->
+          <article class="project-card" data-category="tools-mobile">
             <div class="project-body">
               <div class="project-meta">
-                <span class="project-focus-tag">High-Perf UI / Mobile</span>
-                <span class="project-tag">Flutter</span>
+                <span class="project-focus-tag tag-mobile">Cross-Platform App</span>
+                <span class="project-category-badge">Mobile &amp; UI</span>
               </div>
-              <h3 class="project-title">CryptoPulse</h3>
+              <h3 class="project-title">CryptoPulse — Real-Time Market Analytics</h3>
               <p class="project-desc">
-                A hardware-accelerated cryptocurrency analytics and news tracking application featuring live data streaming and local caching.
+                Cross-platform cryptocurrency market tracking and analytics application built with Flutter &amp; Dart, featuring live streaming price charts, persistent watchlists, and real-time sanitized blockchain news feeds.
               </p>
               <ul class="project-features">
-                <li>Real-time asset value and indicator tracking via high-frequency API streams.</li>
-                <li>Dynamic sparkline trend visualization engines using <strong>fl_chart</strong> library components.</li>
-                <li>State synchronization and caching configurations implemented using <strong>shared_preferences</strong>.</li>
+                <li><strong>Hardware-Accelerated Charts:</strong> Dynamic 7-day sparkline vector trend visualizations powered by <strong>fl_chart</strong> and responsive custom dark-mode design tokens.</li>
+                <li><strong>High-Frequency Market Streaming:</strong> Consumes <strong>CoinGecko REST API v3</strong> and parses Cointelegraph RSS feeds with custom XML sanitization.</li>
+                <li><strong>Reactive State Architecture:</strong> Implemented Singleton pattern with <strong>ValueNotifier</strong> and <strong>shared_preferences</strong> for async local cache synchronization.</li>
               </ul>
               <div class="project-tags">
-                <span class="project-tag">Dart / Flutter</span>
-                <span class="project-tag">Live APIs</span>
+                <span class="project-tag">Flutter</span>
+                <span class="project-tag">Dart</span>
                 <span class="project-tag">fl_chart</span>
-                <span class="project-tag">RSS Feed Engine</span>
+                <span class="project-tag">RESTful APIs</span>
+                <span class="project-tag">Shared Preferences</span>
               </div>
             </div>
             <div class="project-footer">
               <a href="https://github.com/SwetPatel2706/flutter-crypto-tracker" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View CryptoPulse on GitHub">
-                <span>View Code</span>
+                <span>View Repository</span>
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
               </a>
+            </div>
+          </article>
+
+          <!-- Project 5: Multi-Doc RAG Ingestion Pipeline (AI & RAG) -->
+          <article class="project-card" data-category="ai-rag">
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-focus-tag tag-ai">AI Infrastructure</span>
+                <span class="project-category-badge">AI &amp; RAG</span>
+              </div>
+              <h3 class="project-title">Multi-Document RAG Ingestion &amp; Evaluation Pipeline</h3>
+              <p class="project-desc">
+                A modular, format-agnostic document ingestion pipeline and automated evaluation engine built to ingest heterogeneous document formats (PDFs and PPTX decks) into a unified Qdrant vector store.
+              </p>
+              <ul class="project-features">
+                <li><strong>Type-Aware Chunking Strategies:</strong> Employs word-level sliding windows for prose documents and multi-slide context merging for fragmented PowerPoint presentations.</li>
+                <li><strong>Retrieval Evaluation Harness:</strong> Quantitative automated benchmark comparing Top-K hit rates against ground-truth question sets across multiple similarity thresholds.</li>
+                <li><strong>Zero-Cloud Embeddings:</strong> Local vector generation via <strong>sentence-transformers</strong> (<code>all-MiniLM-L6-v2</code>) with batch upserting into <strong>Qdrant Cloud</strong>.</li>
+              </ul>
+              <div class="project-tags">
+                <span class="project-tag">Python 3.10+</span>
+                <span class="project-tag">Qdrant Cloud</span>
+                <span class="project-tag">Sentence Transformers</span>
+                <span class="project-tag">pypdf</span>
+                <span class="project-tag">python-pptx</span>
+                <span class="project-tag">Pydantic</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/SwetPatel2706/multi-doc-rag-pipeline" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Multi-Doc RAG Pipeline on GitHub">
+                <span>View Repository</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 6: RAG Quiz Generator (AI & RAG) -->
+          <article class="project-card" data-category="ai-rag">
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-focus-tag tag-ai">AI Pipeline</span>
+                <span class="project-category-badge">AI &amp; RAG</span>
+              </div>
+              <h3 class="project-title">RAG Quiz Generator — Automated MCQ Synthesis</h3>
+              <p class="project-desc">
+                An automated RAG pipeline parsing multi-page PDF documents, indexing embeddings into hosted Qdrant Cloud collections, and synthesizing strictly schema-validated MCQs via Gemini 2.5 Flash.
+              </p>
+              <ul class="project-features">
+                <li><strong>Contract-First Pydantic v2 Enforcement:</strong> Defined strict structural contracts enforcing exact 4-choice options, bound integer indices, and grounded explanations.</li>
+                <li><strong>Error-Aware Corrective Retry Loop:</strong> 3-attempt retry harness capturing validation errors and feeding raw trace feedback back to the LLM for guaranteed JSON convergence.</li>
+                <li><strong>Topic-Driven Semantic Retrieval:</strong> Query vectors represent thematic curriculum topics retrieving dense top-k context segments for grounded question authoring.</li>
+              </ul>
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">Gemini 2.5 Flash</span>
+                <span class="project-tag">Qdrant Cloud</span>
+                <span class="project-tag">Pydantic v2</span>
+                <span class="project-tag">Sentence Transformers</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/SwetPatel2706/rag-quiz-gen" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View RAG Quiz Generator on GitHub">
+                <span>View Repository</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 7: PDF RAG Basics (AI & RAG) -->
+          <article class="project-card" data-category="ai-rag">
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-focus-tag tag-ai">Foundational RAG</span>
+                <span class="project-category-badge">AI &amp; RAG</span>
+              </div>
+              <h3 class="project-title">PDF RAG Basics — Resilient Local Vector Engine</h3>
+              <p class="project-desc">
+                A lightweight, fully local command-line RAG system written in Python that ingests PDFs, creates semantic vector embeddings, and generates page-cited answers with an automated 3-tier LLM fallback hierarchy.
+              </p>
+              <ul class="project-features">
+                <li><strong>Resilient Multi-Provider Fallback:</strong> Automated 3-tier failover dispatcher across Google Gemini &rarr; OpenRouter &rarr; offline local LM Studio instances.</li>
+                <li><strong>Zero-Cloud Local Embeddings:</strong> 384-dimensional dense representations via <code>all-MiniLM-L6-v2</code> persisted to local disk with <strong>ChromaDB</strong> HNSW cosine index.</li>
+                <li><strong>Deterministic Source Citations:</strong> Word-level sliding window chunker maintaining 12.5% overlap with chunk-to-source-page provenance tracking.</li>
+              </ul>
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">ChromaDB</span>
+                <span class="project-tag">Sentence Transformers</span>
+                <span class="project-tag">Google GenAI</span>
+                <span class="project-tag">LM Studio</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/SwetPatel2706/pdf-rag-basics" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View PDF RAG Basics on GitHub">
+                <span>View Repository</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements & Milestones Section -->
+    <section id="achievements" class="section">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-subtitle">Milestones</p>
+          <h2 class="section-title">Hackathons &amp; Achievements</h2>
+          <p class="section-lead">Competitive development sprints building production-ready enterprise workflows and custom automation systems.</p>
+        </div>
+        
+        <div class="timeline">
+          <!-- Odoo x Adani -->
+          <article class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <span class="timeline-badge badge-highlight">Finalist</span>
+                <span class="timeline-date">January 2026</span>
+              </div>
+              <h3 class="timeline-title">Finalist &mdash; Odoo x Adani University Hackathon</h3>
+              <p class="timeline-desc">
+                Competed in an intense 48-hour sprint designing and implementing production-ready enterprise automation systems and custom business workflows addressing corporate efficiency bottlenecks.
+              </p>
+              <div class="timeline-tags">
+                <span class="skill-tag">ERP Systems</span>
+                <span class="skill-tag">Enterprise Workflows</span>
+                <span class="skill-tag">Automation</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Odoo x Charusat -->
+          <article class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <span class="timeline-badge badge-qualified">Qualified</span>
+                <span class="timeline-date">March 2025</span>
+              </div>
+              <h3 class="timeline-title">Qualified &mdash; Odoo x Charusat Hackathon</h3>
+              <p class="timeline-desc">
+                Qualified by architecting and developing modular ERP solutions, dynamic reporting structures, and business process automation modules under competitive time constraints.
+              </p>
+              <div class="timeline-tags">
+                <span class="skill-tag">Module Architecture</span>
+                <span class="skill-tag">Process Optimization</span>
+              </div>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Achievements Section -->
-    <section id="achievements" class="section">
+    <!-- Education Section -->
+    <section id="education" class="section">
       <div class="container">
         <div class="section-header">
-          <p class="section-subtitle">Milestones</p>
-          <h2 class="section-title">Hackathons &amp; Timeline</h2>
+          <p class="section-subtitle">Background</p>
+          <h2 class="section-title">Academic Education</h2>
+          <p class="section-lead">Foundational Computer Science education with a strong emphasis on algorithms, distributed databases, and software engineering principles.</p>
         </div>
-        
-        <div class="timeline">
-          <!-- Odoo x Charusat -->
-          <article class="timeline-item">
-            <div class="timeline-marker" aria-hidden="true"></div>
-            <div class="timeline-content">
-              <div class="timeline-date">March 2025</div>
-              <h3 class="timeline-title">Qualified &mdash; Odoo x Charusat Hackathon</h3>
-              <p class="timeline-desc">
-                Qualified for the hackathon by designing and implementing customized enterprise resource planning (ERP) solutions and business automation modules.
-              </p>
+
+        <div class="education-grid">
+          <article class="education-card active-degree">
+            <div class="education-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <div class="education-body">
+              <div class="education-status-tag">Undergraduate &bull; Current</div>
+              <h3 class="education-degree">B.Tech in Computer Science and Engineering</h3>
+              <p class="education-school">Indus University, Ahmedabad</p>
+              <div class="education-date">July 2023 &ndash; June 2027</div>
+              <p class="education-notes">Focusing on Object-Oriented Programming, DBMS, Operating Systems, Computer Networks, and AI Systems.</p>
             </div>
           </article>
 
-          <!-- Odoo x Adani -->
-          <article class="timeline-item">
-            <div class="timeline-marker" aria-hidden="true"></div>
-            <div class="timeline-content">
-              <div class="timeline-date">January 2026</div>
-              <h3 class="timeline-title">Finalist &mdash; Odoo x Adani University Hackathon</h3>
-              <p class="timeline-desc">
-                Competed in a fast-paced 48-hour development sprint building production-ready custom enterprise automation systems, addressing corporate efficiency challenges.
-              </p>
+          <article class="education-card">
+            <div class="education-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10"/><path d="M6 10h10"/></svg>
+            </div>
+            <div class="education-body">
+              <div class="education-status-tag">Higher Secondary</div>
+              <h3 class="education-degree">Higher Secondary Education (HSC)</h3>
+              <p class="education-school">Gayatri Vidhya Vihar</p>
+              <div class="education-date">June 2021 &ndash; May 2023</div>
+              <p class="education-notes">Strong foundation in Mathematics, Physics, and Analytical Thinking.</p>
+            </div>
+          </article>
+
+          <article class="education-card">
+            <div class="education-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+            </div>
+            <div class="education-body">
+              <div class="education-status-tag">Secondary</div>
+              <h3 class="education-degree">Secondary School Certificate (SSC)</h3>
+              <p class="education-school">S.D.A. Higher Secondary School</p>
+              <div class="education-date">Till May 2021</div>
+              <p class="education-notes">Academic excellence in foundational sciences and computer fundamentals.</p>
             </div>
           </article>
         </div>
@@ -306,7 +577,8 @@
       <div class="container">
         <div class="section-header">
           <p class="section-subtitle">Get In Touch</p>
-          <h2 class="section-title">Contact Architecture</h2>
+          <h2 class="section-title">Let's Build Together</h2>
+          <p class="section-lead">Interested in collaborating on AI agents, full-stack web applications, or open-source tools? Reach out directly.</p>
         </div>
         
         <div class="contact-grid">
@@ -318,7 +590,7 @@
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
               </div>
               <div class="contact-details">
-                <h4>GitHub Connection</h4>
+                <h4>GitHub</h4>
                 <p>github.com/SwetPatel2706</p>
               </div>
             </a>
@@ -329,7 +601,7 @@
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
               </div>
               <div class="contact-details">
-                <h4>LinkedIn Connection</h4>
+                <h4>LinkedIn</h4>
                 <p>linkedin.com/in/swetpatel2706</p>
               </div>
             </a>
@@ -340,17 +612,28 @@
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
               </div>
               <div class="contact-details">
-                <h4>Email Connection</h4>
+                <h4>Email</h4>
                 <p>swet2706.work@gmail.com</p>
               </div>
             </a>
+
+            <!-- Location Details -->
+            <div class="contact-card contact-card-static">
+              <div class="contact-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="contact-details">
+                <h4>Location</h4>
+                <p>Ahmedabad, Gujarat, India</p>
+              </div>
+            </div>
           </div>
 
           <!-- Interactive Form -->
           <form class="contact-form" id="contact-form" novalidate>
             <div class="form-group">
               <label for="form-name" class="form-label">Full Name</label>
-              <input type="text" id="form-name" class="form-control" placeholder="Your name" required>
+              <input type="text" id="form-name" class="form-control" placeholder="Your Name" required>
             </div>
             
             <div class="form-group">
@@ -359,11 +642,14 @@
             </div>
             
             <div class="form-group">
-              <label for="form-message" class="form-label">Message Details</label>
-              <textarea id="form-message" rows="4" class="form-control" placeholder="Write your message here..." required></textarea>
+              <label for="form-message" class="form-label">Project / Collaboration Details</label>
+              <textarea id="form-message" rows="4" class="form-control" placeholder="Tell me about your project or opportunity..." required></textarea>
             </div>
             
-            <button type="submit" class="btn btn-primary" id="form-submit-btn">Send Message</button>
+            <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+              <span>Send Message</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
           </form>
         </div>
       </div>
@@ -373,8 +659,12 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="container">
-      <a href="#home" class="footer-logo" aria-label="Swet Patel Home">SWET<span>.</span></a>
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#home" class="footer-logo" aria-label="Swet Patel Home">SWET<span>.</span></a>
+        <p class="footer-tagline">Building robust full-stack &amp; agentic AI systems.</p>
+      </div>
+
       <ul class="footer-links">
         <li>
           <a href="https://github.com/SwetPatel2706" target="_blank" rel="noopener noreferrer" class="footer-link" aria-label="GitHub">
@@ -395,38 +685,62 @@
           </a>
         </li>
       </ul>
-      <p class="footer-text">&copy; 2026 Swet Patel. Engineered with care.</p>
+    </div>
+    <div class="container">
+      <p class="footer-copyright">&copy; 2026 Swet Patel. Crafted with clean code &amp; modern web standards.</p>
     </div>
   </footer>
 
   <!-- CV Viewer Modal -->
   <div class="modal" id="resume-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-backdrop"></div>
     <div class="modal-container">
       <button class="modal-close" id="modal-close-btn" aria-label="Close CV preview">&times;</button>
-      <h3 class="modal-title" id="modal-title">Curriculum Vitae</h3>
-      <p class="modal-desc">Download Swet Patel's complete developer resume or view details below.</p>
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-title">Resume / CV</h3>
+        <p class="modal-desc">Swet Patel &bull; Full-Stack &amp; AI Systems Engineer</p>
+      </div>
       
       <!-- Academic details inside modal -->
-      <div class="education-timeline" style="margin-bottom: var(--space-lg);">
-        <h4 style="margin-bottom: var(--space-xs); color: var(--clr-orange-500);">Education Highlights</h4>
-        <ul style="list-style: none; padding-left: 0; display: grid; gap: var(--space-xs);">
-          <li style="border-bottom: 1px solid var(--border-subtle); padding-bottom: 4px;">
-            <strong>Indus University</strong> &mdash; B.Tech in CSE<br>
-            <span style="font-size: 0.85rem; color: var(--text-muted);">July 2023 &ndash; June 2027</span>
-          </li>
-          <li style="border-bottom: 1px solid var(--border-subtle); padding-bottom: 4px;">
-            <strong>Gayatri Vidhya Vihar</strong> &mdash; Higher Secondary<br>
-            <span style="font-size: 0.85rem; color: var(--text-muted);">June 2021 &ndash; May 2023</span>
-          </li>
-          <li>
-            <strong>S.D.A. Higher Secondary School</strong> &mdash; Secondary<br>
-            <span style="font-size: 0.85rem; color: var(--text-muted);">Till May 2021</span>
-          </li>
-        </ul>
+      <div class="modal-section">
+        <h4 class="modal-section-title">Education Highlights</h4>
+        <div class="modal-edu-list">
+          <div class="modal-edu-item">
+            <div class="modal-edu-school">Indus University</div>
+            <div class="modal-edu-degree">B.Tech in Computer Science and Engineering</div>
+            <div class="modal-edu-duration">July 2023 &ndash; June 2027 &bull; Ahmedabad</div>
+          </div>
+          <div class="modal-edu-item">
+            <div class="modal-edu-school">Gayatri Vidhya Vihar</div>
+            <div class="modal-edu-degree">Higher Secondary Education (HSC)</div>
+            <div class="modal-edu-duration">June 2021 &ndash; May 2023</div>
+          </div>
+          <div class="modal-edu-item">
+            <div class="modal-edu-school">S.D.A. Higher Secondary School</div>
+            <div class="modal-edu-degree">Secondary Education (SSC)</div>
+            <div class="modal-edu-duration">Till May 2021</div>
+          </div>
+        </div>
       </div>
 
-      <div style="display: flex; gap: var(--space-md);">
-        <a href="resume.pdf" download class="btn btn-primary" style="flex: 1;">Download PDF</a>
+      <div class="modal-section">
+        <h4 class="modal-section-title">Key Specializations</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">Autonomous Agents</span>
+          <span class="skill-tag">RAG Pipelines</span>
+          <span class="skill-tag">FastAPI</span>
+          <span class="skill-tag">React 19</span>
+          <span class="skill-tag">Qdrant Cloud</span>
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">Docker</span>
+        </div>
+      </div>
+
+      <div class="modal-actions">
+        <a href="resume.pdf" download="Swet_Patel_Resume.pdf" class="btn btn-primary btn-block">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span>Download PDF Resume</span>
+        </a>
       </div>
     </div>
   </div>
